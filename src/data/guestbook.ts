@@ -2,6 +2,18 @@ import type { GuestbookEntry } from "@/types/guestbook";
 
 export const guestbookEntries: GuestbookEntry[] = [
   {
+    id: "subin-an",
+    name: "Subin An",
+    title: "Guest / Builder",
+    note:
+      "Working on fast, practical agentic tooling and open-source experiments. Dropped a GitHub trace at vyv.house.",
+    githubHandle: "subinium",
+    githubUrl: "https://github.com/subinium",
+    avatarUrl: "https://github.com/subinium.png",
+    tags: ["guestbook", "github", "agentic", "vyv.house"],
+    status: "posted",
+  },
+  {
     id: "wanseob-lim",
     name: "Wanseob Lim",
     title: "Guest / Builder",

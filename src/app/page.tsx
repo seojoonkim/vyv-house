@@ -316,7 +316,7 @@ export default function Home() {
         </div>
       </section>
 
-      <section id="guestbook" className="site-container px-5 pb-16 md:px-8 md:pb-24">
+      <section id="guestbook" className="site-container px-5 pt-8 pb-16 md:px-8 md:pt-12 md:pb-24">
         <div className="mb-10 max-w-4xl">
           <div className="editorial-kicker editorial-kicker-pink mb-4">guestbook</div>
           <h2 className="font-display text-4xl tracking-[-0.03em] md:text-6xl">
@@ -397,7 +397,7 @@ export default function Home() {
 
       <div className="section-divider" />
 
-      <section id="life" className="site-container px-5 pb-16 md:px-8 md:pb-24">
+      <section id="life" className="site-container px-5 pt-8 pb-16 md:px-8 md:pt-12 md:pb-24">
         <div className="grid gap-10 lg:grid-cols-[0.72fr_1.28fr]">
           <div>
             <div className="editorial-kicker editorial-kicker-pink signal-kicker-pink mb-5">life at the house</div>
@@ -422,7 +422,7 @@ export default function Home() {
         </div>
       </section>
 
-      <section id="join" className="site-container px-5 pb-16 md:px-8 md:pb-24">
+      <section id="join" className="site-container px-5 pt-8 pb-16 md:px-8 md:pt-12 md:pb-24">
         <div className="grid gap-10 pt-6 md:grid-cols-[1.15fr_0.85fr] md:items-end">
           <div>
             <div className="editorial-kicker editorial-kicker-pink signal-kicker-pink mb-5">join / contact</div>

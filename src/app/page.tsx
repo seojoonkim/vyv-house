@@ -225,10 +225,10 @@ export default function Home() {
           </div>
 
           <div>
-            <div className="editorial-kicker editorial-kicker-pink mb-5">signal / atmosphere</div>
+            <div className="editorial-kicker editorial-kicker-pink mb-5 signal-kicker-pink">signal / atmosphere</div>
             <div className="max-w-4xl">
               <h2 className="font-display text-4xl tracking-[-0.03em] md:text-6xl">
-                part residency, part lab, part <span className="highlight-block-pink">internet salon</span>
+                part residency, part lab, part <span className="highlight-block-pink signal-highlight-pink">internet salon</span>
               </h2>
               <div className="mt-6 max-w-3xl space-y-4 text-base leading-7 text-white/72 md:text-lg">
                 <p>
@@ -244,7 +244,7 @@ export default function Home() {
           </div>
         </div>
         <div className="mt-14 pt-6 text-center">
-          <div className="editorial-kicker editorial-kicker-pink justify-center">house protocol</div>
+          <div className="editorial-kicker editorial-kicker-pink signal-kicker-pink justify-center">house protocol</div>
           <div className="mt-8 space-y-4 text-2xl leading-tight tracking-[-0.03em] text-white/88 md:text-4xl">
             {houseProtocols.map((line, index) => (
               <p key={line} className={index === houseProtocols.length - 1 ? "text-[#ff3b7c]" : ""}>

@@ -239,6 +239,10 @@ body::before {
   background: #d4ff00;
 }
 
+.signal-highlight-pink {
+  background: #ff3b7c;
+}
+
 .highlight-block-green {
   background: #d4ff00;
 }
@@ -291,6 +295,10 @@ body::before {
 
 .editorial-kicker-pink::before {
   background: rgba(212, 255, 0, 0.82);
+}
+
+.signal-kicker-pink::before {
+  background: rgba(255, 59, 124, 0.82);
 }
 
 .signal-line {

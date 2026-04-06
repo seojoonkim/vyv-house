@@ -154,7 +154,7 @@ export default function Home() {
             <div className="hero-visual-shell">
               <video
                 className="hero-visual"
-                src="/.openclaw/media/inbound/video---faa0f808-9b2d-4f53-ad59-5e4cff5c06fc.mp4"
+                src="/hero-video.mp4"
                 autoPlay
                 muted
                 loop

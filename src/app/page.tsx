@@ -225,7 +225,7 @@ export default function Home() {
               a <span className="highlight-block-pink">creative bunker</span> for people who build
             </h2>
           </div>
-          <div className="space-y-0 border-t border-white/8">
+          <div className="space-y-0">
             {principles.map(([title, description]) => (
               <div
                 key={title}

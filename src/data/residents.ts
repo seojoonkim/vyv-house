@@ -79,7 +79,7 @@ export const residents: Resident[] = [
     name: "Jeonghwan Park",
     githubId: "StableFluffy",
     githubUrl: "https://github.com/StableFluffy",
-    avatarUrl: "https://github.com/StableFluffy.png",
+    avatarUrl: "/avatars/jeonghwan-park-x.jpg",
     xHandle: "stablefluffy",
     xUrl: "https://x.com/stablefluffy",
     description:

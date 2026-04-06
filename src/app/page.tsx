@@ -235,10 +235,7 @@ export default function Home() {
             </div>
           </div>
         </div>
-      </section>
-
-      <section className="site-container px-5 pb-16 md:px-8 md:pb-24">
-        <div className="frame-section pt-6 text-center">
+        <div className="mt-14 frame-section pt-6 text-center">
           <div className="editorial-kicker editorial-kicker-pink justify-center">house protocol</div>
           <div className="mt-8 space-y-4 text-2xl leading-tight tracking-[-0.03em] text-white/88 md:text-4xl">
             {houseProtocols.map((line, index) => (

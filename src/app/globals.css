@@ -113,19 +113,20 @@ body {
   padding-top: 1rem;
 }
 
-.hero-signal-stats {
-  margin-top: 1.2rem;
+.hero-meta-strip {
+  margin-top: 1.4rem;
   display: grid;
+  max-width: 22rem;
   grid-template-columns: repeat(2, minmax(0, 1fr));
-  border-top: 1px solid rgba(255, 59, 124, 0.28);
-  border-bottom: 1px solid rgba(255, 59, 124, 0.18);
+  border-top: 1px solid rgba(255, 255, 255, 0.08);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.08);
 }
 
-.hero-signal-stat {
-  padding: 1rem 0;
+.hero-meta-item {
+  padding: 0.95rem 0;
 }
 
-.hero-signal-stat + .hero-signal-stat {
+.hero-meta-item + .hero-meta-item {
   border-left: 1px solid rgba(255, 255, 255, 0.08);
   padding-left: 1.25rem;
 }

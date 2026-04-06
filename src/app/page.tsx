@@ -257,12 +257,10 @@ export default function Home() {
       <div className="section-divider" />
 
       <section id="residents" className="site-container px-5 py-16 md:px-8 md:py-24">
-        <div className="mb-10 flex flex-col gap-4 md:flex-row md:items-end md:justify-between">
-          <div>
-            <div className="editorial-kicker mb-4">the residents</div>
-            <h2 className="font-display text-4xl tracking-[-0.03em] md:text-6xl">the people make the house</h2>
-          </div>
-          <p className="max-w-xl text-sm leading-6 text-white/65 md:text-base">
+        <div className="mb-10 max-w-4xl">
+          <div className="editorial-kicker mb-4">the residents</div>
+          <h2 className="font-display text-4xl tracking-[-0.03em] md:text-6xl">the people make the house</h2>
+          <p className="mt-5 max-w-2xl text-sm leading-6 text-white/65 md:text-base">
             Real residents only — profiles link directly to the people currently building from the house.
           </p>
         </div>

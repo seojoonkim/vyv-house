@@ -43,16 +43,60 @@ body {
   display: grid;
 }
 
+.hero-signal-card {
+  position: relative;
+  overflow: hidden;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 1.2rem;
+  padding: 1.1rem;
+  background:
+    linear-gradient(180deg, rgba(255, 255, 255, 0.03), rgba(255, 255, 255, 0.012)),
+    radial-gradient(circle at top left, rgba(212, 255, 0, 0.08), transparent 34%),
+    radial-gradient(circle at bottom right, rgba(255, 59, 124, 0.12), transparent 32%),
+    rgba(14, 16, 18, 0.96);
+  box-shadow: 0 24px 70px rgba(0, 0, 0, 0.32);
+}
+
+.hero-signal-head {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 1rem;
+}
+
+.hero-live-pill {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.45rem;
+  border: 1px solid rgba(255, 59, 124, 0.28);
+  border-radius: 999px;
+  padding: 0.42rem 0.72rem;
+  font-size: 0.68rem;
+  line-height: 1;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  color: rgba(255, 255, 255, 0.78);
+  background: rgba(255, 59, 124, 0.08);
+}
+
+.hero-live-dot {
+  width: 0.45rem;
+  height: 0.45rem;
+  border-radius: 999px;
+  background: #ff3b7c;
+  box-shadow: 0 0 0.6rem rgba(255, 59, 124, 0.9);
+}
+
 .hero-visual-shell {
   position: relative;
   overflow: hidden;
   border: 1px solid rgba(255, 255, 255, 0.1);
-  border-radius: 1rem;
+  border-radius: 0.95rem;
   background:
     radial-gradient(circle at top left, rgba(212, 255, 0, 0.08), transparent 38%),
     radial-gradient(circle at bottom right, rgba(255, 59, 124, 0.12), transparent 34%),
-    rgba(14, 16, 18, 0.92);
-  box-shadow: 0 20px 60px rgba(0, 0, 0, 0.28);
+    rgba(8, 9, 11, 0.96);
+  box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.04);
 }
 
 .hero-visual {
@@ -61,6 +105,29 @@ body {
   aspect-ratio: 1 / 1;
   object-fit: cover;
   background: #000;
+}
+
+.hero-signal-body {
+  margin-top: 1.1rem;
+  border-top: 1px solid rgba(255, 255, 255, 0.08);
+  padding-top: 1rem;
+}
+
+.hero-signal-stats {
+  margin-top: 1.2rem;
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  border-top: 1px solid rgba(255, 59, 124, 0.28);
+  border-bottom: 1px solid rgba(255, 59, 124, 0.18);
+}
+
+.hero-signal-stat {
+  padding: 1rem 0;
+}
+
+.hero-signal-stat + .hero-signal-stat {
+  border-left: 1px solid rgba(255, 255, 255, 0.08);
+  padding-left: 1.25rem;
 }
 
 @media (min-width: 1024px) {

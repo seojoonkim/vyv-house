@@ -150,8 +150,19 @@ export default function Home() {
             </div>
           </div>
 
-          <div className="space-y-6">
-            <div className="hero-visual-shell">
+          <div className="hero-signal-card">
+            <div className="hero-signal-head">
+              <div>
+                <div className="text-[11px] uppercase tracking-[0.24em] text-white/42">house signal</div>
+                <div className="mt-2 text-lg font-semibold text-white md:text-xl">Live from vyv.house</div>
+              </div>
+              <div className="hero-live-pill">
+                <span className="hero-live-dot" />
+                live
+              </div>
+            </div>
+
+            <div className="hero-visual-shell mt-5">
               <video
                 className="hero-visual"
                 src="/hero-video.mp4"
@@ -162,17 +173,12 @@ export default function Home() {
               />
             </div>
 
-            <div className="frame-section frame-section-pink pt-6">
-              <div className="flex items-center justify-between text-[11px] uppercase tracking-[0.24em] text-white/46">
-              <span>house signal</span>
-              <span className="text-[#ff3b7c]">live</span>
-            </div>
-
-              <div className="signal-line mt-6 space-y-5">
+            <div className="hero-signal-body">
               <div className="flex items-center gap-2 text-sm text-white/62">
                 <Sparkles size={16} className="text-[#ff3b7c]" />
                 part residency, part lab, part internet salon
               </div>
+
               <div className="space-y-4 text-sm leading-6 text-white/72 md:text-[0.96rem]">
                 <p>
                   We optimize for proximity: to work, to feedback, to energy, and to the kind of
@@ -185,15 +191,14 @@ export default function Home() {
               </div>
             </div>
 
-              <div className="data-strip data-strip-pink mt-8 grid text-left sm:grid-cols-2 lg:grid-cols-2">
-              <div className="data-cell px-0 py-4 sm:px-5">
+            <div className="hero-signal-stats">
+              <div className="hero-signal-stat">
                 <div className="text-[11px] uppercase tracking-[0.24em] text-white/42">residents</div>
                 <div className="mt-2 font-emphasis text-4xl text-[#d4ff00]">06</div>
               </div>
-              <div className="data-cell px-0 py-4 sm:px-5">
+              <div className="hero-signal-stat">
                 <div className="text-[11px] uppercase tracking-[0.24em] text-white/42">mode</div>
                 <div className="mt-2 font-emphasis text-4xl text-[#ff3b7c]">ship</div>
-              </div>
               </div>
             </div>
           </div>

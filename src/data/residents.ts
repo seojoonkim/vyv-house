@@ -61,4 +61,32 @@ export const residents: Resident[] = [
     sortOrder: 4,
     status: "current",
   },
+  {
+    id: "ggos3",
+    name: "GGos3",
+    githubId: "GGos3",
+    githubUrl: "https://github.com/GGos3",
+    avatarUrl: "https://github.com/GGos3.png",
+    description:
+      "Builder sharing lightweight experiments and practical code on GitHub, with an interest in shipping small things fast.",
+    role: "Builder Resident",
+    tags: ["experiments", "shipping", "code"],
+    sortOrder: 5,
+    status: "current",
+  },
+  {
+    id: "jeonghwan-park",
+    name: "Jeonghwan Park",
+    githubId: "StableFluffy",
+    githubUrl: "https://github.com/StableFluffy",
+    avatarUrl: "https://github.com/StableFluffy.png",
+    xHandle: "stablefluffy",
+    xUrl: "https://x.com/stablefluffy",
+    description:
+      "Builder exploring AI products, model workflows, and software experiments across code, research, and fast iteration.",
+    role: "Builder Resident",
+    tags: ["AI", "research", "experiments"],
+    sortOrder: 6,
+    status: "current",
+  },
 ];

@@ -174,7 +174,7 @@ export default function Home() {
             <div className="data-strip mt-8 grid text-left sm:grid-cols-2 lg:grid-cols-2">
               <div className="data-cell px-0 py-4 sm:px-5">
                 <div className="text-[11px] uppercase tracking-[0.24em] text-white/42">residents</div>
-                <div className="mt-2 font-emphasis text-4xl text-[#d4ff00]">04</div>
+                <div className="mt-2 font-emphasis text-4xl text-[#d4ff00]">06</div>
               </div>
               <div className="data-cell px-0 py-4 sm:px-5">
                 <div className="text-[11px] uppercase tracking-[0.24em] text-white/42">mode</div>

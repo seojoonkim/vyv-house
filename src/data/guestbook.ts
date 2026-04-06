@@ -6,7 +6,7 @@ export const guestbookEntries: GuestbookEntry[] = [
     name: "Ji Hwan Han",
     title: "Guest / Builder",
     note:
-      "Building across Phusis Labs, open-source experiments, and agentic tooling. Dropped a GitHub trace at vyv.house.",
+      "Building across Hashed, open-source experiments, and agentic tooling. Dropped a GitHub trace at vyv.house.",
     githubHandle: "jihwan97-hash",
     githubUrl: "https://github.com/jihwan97-hash",
     avatarUrl: "https://github.com/jihwan97-hash.png",

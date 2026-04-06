@@ -236,7 +236,7 @@ body::before {
 }
 
 .highlight-block-pink {
-  background: #ff3b7c;
+  background: #d4ff00;
 }
 
 .highlight-block-green {
@@ -249,8 +249,8 @@ body::before {
   height: 1px;
   margin-top: 1.5rem;
   margin-bottom: 1.5rem;
-  background: linear-gradient(90deg, transparent 0%, rgba(212, 255, 0, 0.9) 34%, rgba(255, 59, 124, 0.72) 60%, transparent 100%);
-  opacity: 0.75;
+  background: linear-gradient(90deg, transparent 0%, rgba(212, 255, 0, 0.88) 30%, rgba(212, 255, 0, 0.98) 50%, rgba(212, 255, 0, 0.88) 70%, transparent 100%);
+  opacity: 0.82;
 }
 
 
@@ -290,7 +290,7 @@ body::before {
 }
 
 .editorial-kicker-pink::before {
-  background: rgba(255, 59, 124, 0.82);
+  background: rgba(212, 255, 0, 0.82);
 }
 
 .signal-line {

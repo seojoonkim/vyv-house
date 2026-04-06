@@ -149,24 +149,11 @@ export default function Home() {
               </a>
             </div>
 
-            <div className="hero-meta-strip">
-              <div className="hero-meta-item">
-                <div className="text-[11px] uppercase tracking-[0.24em] text-white/42">residents</div>
-                <div className="mt-2 font-emphasis text-4xl text-[#d4ff00]">06</div>
-              </div>
-              <div className="hero-meta-item">
-                <div className="text-[11px] uppercase tracking-[0.24em] text-white/42">mode</div>
-                <div className="mt-2 font-emphasis text-4xl text-[#ff3b7c]">ship</div>
-              </div>
-            </div>
           </div>
 
           <div className="hero-signal-card">
             <div className="hero-signal-head">
-              <div>
-                <div className="text-[11px] uppercase tracking-[0.24em] text-white/42">house signal</div>
-                <div className="mt-2 text-lg font-semibold text-white md:text-xl">Live from vyv.house</div>
-              </div>
+              <div className="text-lg font-semibold text-white md:text-xl">Live from vyv.house</div>
               <div className="hero-live-pill">
                 <span className="hero-live-dot" />
                 live
@@ -184,7 +171,16 @@ export default function Home() {
               />
             </div>
 
-
+            <div className="hero-signal-stats">
+              <div className="hero-signal-stat">
+                <div className="text-[11px] uppercase tracking-[0.24em] text-white/42">residents</div>
+                <div className="mt-2 font-emphasis text-4xl text-[#d4ff00]">06</div>
+              </div>
+              <div className="hero-signal-stat">
+                <div className="text-[11px] uppercase tracking-[0.24em] text-white/42">mode</div>
+                <div className="mt-2 font-emphasis text-4xl text-[#ff3b7c]">ship</div>
+              </div>
+            </div>
           </div>
         </div>
 

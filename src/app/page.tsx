@@ -115,7 +115,7 @@ export default function Home() {
         <div className="hero-grid gap-10 items-center">
           <div>
             <div className="editorial-kicker editorial-kicker-pink mb-6">
-              <House size={14} className="text-[#ff3b7c]" />
+              <House size={14} className="text-[#d4ff00]" />
               hacker house / builder residency
             </div>
 

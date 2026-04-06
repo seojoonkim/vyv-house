@@ -1,5 +1,29 @@
 import { residents } from "@/data/residents";
-import { House, Mail, MapPin, Sparkles, Users, ArrowUpRight, Link } from "lucide-react";
+import { House, Mail, MapPin, Sparkles, Users, ArrowUpRight } from "lucide-react";
+
+function GitHubIcon({ className = "h-3.5 w-3.5" }: { className?: string }) {
+  return (
+    <svg viewBox="0 0 24 24" aria-hidden="true" className={className} fill="currentColor">
+      <path d="M12 1.5C6.201 1.5 1.5 6.388 1.5 12.418c0 4.824 3.008 8.916 7.18 10.36.524.1.714-.233.714-.518 0-.256-.01-1.102-.014-1.998-2.922.652-3.538-1.286-3.538-1.286-.476-1.256-1.163-1.59-1.163-1.59-.95-.67.072-.656.072-.656 1.052.076 1.606 1.123 1.606 1.123.935 1.65 2.454 1.174 3.052.897.094-.697.366-1.174.666-1.444-2.333-.274-4.786-1.2-4.786-5.342 0-1.18.406-2.145 1.072-2.902-.108-.275-.464-1.383.102-2.882 0 0 .874-.287 2.864 1.108A9.675 9.675 0 0 1 12 6.853a9.68 9.68 0 0 1 2.607.364c1.988-1.395 2.86-1.108 2.86-1.108.568 1.5.212 2.607.104 2.882.668.757 1.07 1.722 1.07 2.902 0 4.152-2.457 5.064-4.796 5.333.376.334.712.99.712 1.996 0 1.442-.012 2.604-.012 2.958 0 .288.188.623.72.517 4.168-1.446 7.173-5.537 7.173-10.358C22.5 6.388 17.799 1.5 12 1.5Z" />
+    </svg>
+  );
+}
+
+function XIcon({ className = "h-3.5 w-3.5" }: { className?: string }) {
+  return (
+    <svg viewBox="0 0 24 24" aria-hidden="true" className={className} fill="currentColor">
+      <path d="M18.901 2.25h3.68l-8.04 9.19L24 21.75h-7.406l-5.8-7.585-6.638 7.585H.474l8.6-9.83L0 2.25h7.594l5.243 6.932L18.901 2.25Zm-1.291 17.295h2.04L6.486 4.338H4.298L17.61 19.545Z" />
+    </svg>
+  );
+}
+
+function LinkedInIcon({ className = "h-3.5 w-3.5" }: { className?: string }) {
+  return (
+    <svg viewBox="0 0 24 24" aria-hidden="true" className={className} fill="currentColor">
+      <path d="M4.983 3.5a1.983 1.983 0 1 1 0 3.966 1.983 1.983 0 0 1 0-3.966ZM3.5 8.985h2.966V20.5H3.5V8.985Zm7.61 0h2.844v1.572h.04c.396-.75 1.364-1.541 2.808-1.541 3.004 0 3.558 2.058 3.558 4.734V20.5h-2.964v-5.983c0-1.427-.025-3.262-1.913-3.262-1.915 0-2.208 1.552-2.208 3.158V20.5H11.11V8.985Z" />
+    </svg>
+  );
+}
 
 const houseProtocols = [
   "live close to the work",
@@ -252,16 +276,16 @@ export default function Home() {
                   </div>
                   <div className="mt-3 flex flex-wrap gap-2 text-sm text-white/65">
                     <a href={resident.githubUrl} target="_blank" rel="noreferrer" className="inline-flex items-center gap-1 hover:text-white">
-                      <span aria-hidden>⌘</span> {resident.githubId}
+                      <GitHubIcon /> {resident.githubId}
                     </a>
                     {resident.xUrl ? (
                       <a href={resident.xUrl} target="_blank" rel="noreferrer" className="inline-flex items-center gap-1 hover:text-white">
-                        <span aria-hidden>𝕏</span> @{resident.xHandle}
+                        <XIcon /> @{resident.xHandle}
                       </a>
                     ) : null}
                     {resident.linkedinUrl ? (
                       <a href={resident.linkedinUrl} target="_blank" rel="noreferrer" className="inline-flex items-center gap-1 hover:text-white">
-                        <Link size={14} /> {resident.linkedinHandle ?? "LinkedIn"}
+                        <LinkedInIcon /> {resident.linkedinHandle ?? "LinkedIn"}
                       </a>
                     ) : null}
                   </div>

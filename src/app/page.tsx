@@ -425,9 +425,9 @@ export default function Home() {
       <section id="join" className="site-container px-5 pb-16 md:px-8 md:pb-24">
         <div className="grid gap-10 pt-6 md:grid-cols-[1.15fr_0.85fr] md:items-end">
           <div>
-            <div className="editorial-kicker editorial-kicker-pink mb-5">join / contact</div>
+            <div className="editorial-kicker editorial-kicker-pink signal-kicker-pink mb-5">join / contact</div>
             <h2 className="font-display text-4xl tracking-[-0.03em] md:text-6xl">
-              want to <span className="gradient-text">build from here?</span>
+              want to <span className="highlight-block-pink signal-highlight-pink">build from here?</span>
             </h2>
             <p className="mt-5 max-w-2xl text-base leading-7 text-white/72">
               If you are a founder, builder, researcher, or operator who wants to live near momentum,

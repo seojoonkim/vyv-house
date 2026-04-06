@@ -20,34 +20,36 @@ const doHyeon = Do_Hyeon({
   weight: "400",
 });
 
+const metaTitle = "vyv-house — a house for builders with taste";
+const metaDescription =
+  "A vibey hacker house in Seoul for founders, researchers, designers, and internet-native builders to live close to the work.";
+const ogImage = "/og/vyv-house-og.jpg";
+
 export const metadata: Metadata = {
   metadataBase: new URL("https://vyv.house"),
-  title: "vyv-house — a hacker house for builders",
-  description:
-    "vyv-house는 빌더, 연구자, 창업가, 인터넷 네이티브가 함께 살고 만들고 실험하는 해커하우스입니다.",
+  title: metaTitle,
+  description: metaDescription,
   openGraph: {
-    title: "vyv-house — a hacker house for builders",
-    description:
-      "vyv-house는 빌더, 연구자, 창업가, 인터넷 네이티브가 함께 살고 만들고 실험하는 해커하우스입니다.",
+    title: metaTitle,
+    description: metaDescription,
     url: "https://vyv.house",
     siteName: "vyv-house",
     locale: "en_US",
     type: "website",
     images: [
       {
-        url: "/og-image.jpg",
+        url: ogImage,
         width: 1200,
         height: 630,
-        alt: "vyv-house open graph image",
+        alt: "vyv-house — a house for builders with taste",
       },
     ],
   },
   twitter: {
     card: "summary_large_image",
-    title: "vyv-house — a hacker house for builders",
-    description:
-      "vyv-house는 빌더, 연구자, 창업가, 인터넷 네이티브가 함께 살고 만들고 실험하는 해커하우스입니다.",
-    images: ["/og-image.jpg"],
+    title: metaTitle,
+    description: metaDescription,
+    images: [ogImage],
   },
   alternates: {
     canonical: "https://vyv.house",

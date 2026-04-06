@@ -74,4 +74,19 @@ export const residents: Resident[] = [
     sortOrder: 5,
     status: "current",
   },
+  {
+    id: "jeonghwan-park",
+    name: "Jeonghwan Park",
+    githubId: "StableFluffy",
+    githubUrl: "https://github.com/StableFluffy",
+    avatarUrl: "https://github.com/StableFluffy.png",
+    xHandle: "stablefluffy",
+    xUrl: "https://x.com/stablefluffy",
+    description:
+      "Builder exploring AI products, model workflows, and software experiments across code, research, and fast iteration.",
+    role: "Builder Resident",
+    tags: ["AI", "research", "experiments"],
+    sortOrder: 6,
+    status: "current",
+  },
 ];

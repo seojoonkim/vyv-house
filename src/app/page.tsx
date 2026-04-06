@@ -113,15 +113,6 @@ export default function Home() {
 
       <section id="top" className="site-container px-5 pb-16 pt-28 md:px-8 md:pb-24 md:pt-32">
         <div className="hero-grid gap-10 items-center">
-          <div className="hero-photo-panel">
-            <img
-              src="/hero-left.jpg"
-              alt="A moment from vyv.house"
-              className="hero-photo"
-            />
-            <div className="hero-photo-overlay" aria-hidden="true" />
-          </div>
-
           <div>
             <div className="editorial-kicker editorial-kicker-pink mb-6">
               <House size={14} className="text-[#ff3b7c]" />

@@ -153,7 +153,7 @@ export default function Home() {
 
           <div className="hero-signal-card">
             <div className="hero-signal-head">
-              <div className="text-lg font-semibold text-white md:text-xl">Live from vyv.house</div>
+              <div className="text-lg font-semibold text-white md:text-xl">A moment from vyv.house</div>
               <div className="hero-live-pill">
                 <span className="hero-live-dot" />
                 live

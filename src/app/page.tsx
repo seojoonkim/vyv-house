@@ -46,18 +46,18 @@ const contactItems = [
     icon: Mail,
     label: "Email",
     value: "hello@vyv.house",
-    accent: "text-[#d7ff3f]",
+    accent: "text-[#d4ff00]",
   },
   {
     icon: MapPin,
     label: "Base",
     value: "Seoul / exact location shared privately",
-    accent: "text-[#ff4fa3]",
+    accent: "text-[#ff3b7c]",
   },
   {
     icon: Users,
     label: "Openings",
-    value: "Resident slots and collaborations — placeholder status",
+    value: "Current residents listed publicly. Collaborations and visits open by context.",
     accent: "text-white/80",
   },
 ];
@@ -66,13 +66,13 @@ export default function Home() {
   return (
     <main className="relative overflow-hidden bg-[#060708] text-[#f3f4f6]">
       <div className="pointer-events-none absolute inset-0 soft-grid opacity-[0.14]" />
-      <div className="hero-orb absolute left-[-10rem] top-[-2rem] h-80 w-80 rounded-full bg-[rgba(215,255,63,0.22)]" />
-      <div className="hero-orb absolute right-[-8rem] top-28 h-80 w-80 rounded-full bg-[rgba(255,79,163,0.18)]" />
+      <div className="hero-orb absolute left-[-10rem] top-[-2rem] h-80 w-80 bg-[rgba(212,255,0,0.2)]" />
+      <div className="hero-orb absolute right-[-8rem] top-28 h-80 w-80 bg-[rgba(255,59,124,0.16)]" />
 
-      <header className="sticky top-0 z-40 border-b border-white/8 bg-[#060708]/86 backdrop-blur-xl">
+      <header className="sticky top-0 z-40 border-b border-white/8 bg-[#060708]/90 backdrop-blur-xl">
         <div className="mx-auto flex max-w-7xl items-center justify-between px-5 py-4 md:px-8">
           <a href="#top" className="font-display text-xl tracking-wide text-white">
-            vyv<span className="text-[#d7ff3f]">.</span>house
+            vyv<span className="text-[#d4ff00]">.</span>house
           </a>
           <nav className="hidden items-center gap-6 text-sm text-white/66 md:flex">
             <a href="#about" className="transition hover:text-white">about</a>
@@ -82,7 +82,8 @@ export default function Home() {
           </nav>
           <a
             href="#join"
-            className="rounded-full border border-white/12 px-4 py-2 text-sm font-medium text-white transition hover:border-[#d7ff3f]/45 hover:text-[#d7ff3f]"
+            className="border border-white/12 px-4 py-2 text-sm font-medium text-white transition hover:border-[#d4ff00]/55 hover:text-[#d4ff00]"
+            style={{ borderRadius: "var(--radius-button)" }}
           >
             say hi
           </a>
@@ -93,7 +94,7 @@ export default function Home() {
         <div className="grid gap-12 lg:grid-cols-[1.18fr_0.82fr] lg:items-end">
           <div>
             <div className="editorial-kicker mb-6">
-              <House size={14} className="text-[#d7ff3f]" />
+              <House size={14} className="text-[#d4ff00]" />
               hacker house / builder residency
             </div>
 
@@ -112,14 +113,16 @@ export default function Home() {
             <div className="mt-8 flex flex-col gap-3 sm:flex-row">
               <a
                 href="#residents"
-                className="inline-flex items-center justify-center gap-2 rounded-full bg-[#d7ff3f] px-5 py-3 font-semibold text-black transition hover:bg-[#e3ff77]"
+                className="inline-flex items-center justify-center gap-2 bg-[#d4ff00] px-5 py-3 font-semibold text-black transition hover:bg-[#e2ff57]"
+                style={{ borderRadius: "var(--radius-button)" }}
               >
                 Meet the residents
                 <ArrowUpRight size={18} />
               </a>
               <a
                 href="#join"
-                className="inline-flex items-center justify-center gap-2 rounded-full border border-white/12 px-5 py-3 font-medium text-white transition hover:border-white/24 hover:bg-white/[0.03]"
+                className="inline-flex items-center justify-center gap-2 border border-white/12 px-5 py-3 font-medium text-white transition hover:border-white/24 hover:bg-white/[0.03]"
+                style={{ borderRadius: "var(--radius-button)" }}
               >
                 Apply / Contact
               </a>
@@ -129,12 +132,12 @@ export default function Home() {
           <div className="frame-section pl-0 pt-6 lg:pl-8">
             <div className="flex items-center justify-between text-[11px] uppercase tracking-[0.24em] text-white/46">
               <span>house signal</span>
-              <span className="text-[#ff4fa3]">live</span>
+              <span className="text-[#ff3b7c]">live</span>
             </div>
 
             <div className="signal-line mt-6 space-y-5">
               <div className="flex items-center gap-2 text-sm text-white/62">
-                <Sparkles size={16} className="text-[#ff4fa3]" />
+                <Sparkles size={16} className="text-[#ff3b7c]" />
                 part residency, part lab, part internet salon
               </div>
               <div className="space-y-4 text-sm leading-6 text-white/72 md:text-[0.96rem]">
@@ -152,11 +155,11 @@ export default function Home() {
             <div className="data-strip mt-8 grid text-left sm:grid-cols-2 lg:grid-cols-2">
               <div className="data-cell px-0 py-4 sm:px-5">
                 <div className="text-[11px] uppercase tracking-[0.24em] text-white/42">residents</div>
-                <div className="mt-2 font-emphasis text-4xl text-[#d7ff3f]">03</div>
+                <div className="mt-2 font-emphasis text-4xl text-[#d4ff00]">02</div>
               </div>
               <div className="data-cell px-0 py-4 sm:px-5">
                 <div className="text-[11px] uppercase tracking-[0.24em] text-white/42">mode</div>
-                <div className="mt-2 font-emphasis text-4xl text-[#ff4fa3]">ship</div>
+                <div className="mt-2 font-emphasis text-4xl text-[#ff3b7c]">ship</div>
               </div>
             </div>
           </div>
@@ -203,7 +206,7 @@ export default function Home() {
           <div className="editorial-kicker justify-center">house protocol</div>
           <div className="mt-8 space-y-4 text-2xl leading-tight tracking-[-0.03em] text-white/88 md:text-4xl">
             {houseProtocols.map((line, index) => (
-              <p key={line} className={index === houseProtocols.length - 1 ? "text-[#d7ff3f]" : ""}>
+              <p key={line} className={index === houseProtocols.length - 1 ? "text-[#d4ff00]" : ""}>
                 {line}
               </p>
             ))}
@@ -220,35 +223,30 @@ export default function Home() {
             <h2 className="font-display text-4xl tracking-[-0.03em] md:text-6xl">the people make the house</h2>
           </div>
           <p className="max-w-xl text-sm leading-6 text-white/65 md:text-base">
-            Resident profiles are structured so you can attach real names, GitHub IDs, avatars, X links,
-            and a short explanation of what each person is building or exploring.
+            Real residents only — profiles link directly to the people currently building from the house.
           </p>
         </div>
 
-        <div className="grid gap-6 md:grid-cols-2 xl:grid-cols-3">
+        <div className="grid gap-6 md:grid-cols-2">
           {residents.map((resident) => (
             <article
               key={resident.id}
-              className="resident-card rounded-[1.8rem] p-5 transition duration-300 hover:-translate-y-1 hover:border-[#d7ff3f]/35"
+              className="resident-card p-5 transition duration-300 hover:-translate-y-1 hover:border-[#d4ff00]/35"
             >
               <div className="flex items-start gap-4">
                 {/* eslint-disable-next-line @next/next/no-img-element */}
                 <img
                   src={resident.avatarUrl}
                   alt={resident.name}
-                  className="h-20 w-20 rounded-2xl border border-white/10 object-cover"
+                  className="h-20 w-20 border border-white/10 object-cover"
+                  style={{ borderRadius: "0.45rem" }}
                 />
                 <div className="min-w-0 flex-1">
                   <div className="flex items-start justify-between gap-3">
                     <div>
                       <h3 className="text-xl font-semibold text-white">{resident.name}</h3>
-                      <p className="mt-1 text-sm text-[#d7ff3f]">{resident.role}</p>
+                      <p className="mt-1 text-sm text-[#d4ff00]">{resident.role}</p>
                     </div>
-                    {resident.featured ? (
-                      <span className="rounded-full border border-[#ff4fa3]/30 bg-[#ff4fa3]/10 px-2.5 py-1 text-[11px] uppercase tracking-[0.18em] text-[#ff9ac7]">
-                        featured
-                      </span>
-                    ) : null}
                   </div>
                   <div className="mt-3 flex flex-wrap gap-2 text-sm text-white/65">
                     <a href={resident.githubUrl} target="_blank" rel="noreferrer" className="inline-flex items-center gap-1 hover:text-white">
@@ -265,7 +263,11 @@ export default function Home() {
               <p className="mt-5 text-sm leading-6 text-white/72">{resident.description}</p>
               <div className="mt-5 flex flex-wrap gap-2">
                 {resident.tags?.map((tag) => (
-                  <span key={tag} className="rounded-full border border-white/10 bg-white/5 px-3 py-1 text-xs text-white/60">
+                  <span
+                    key={tag}
+                    className="border border-white/10 bg-white/5 px-3 py-1 text-xs text-white/60"
+                    style={{ borderRadius: "var(--radius-chip)" }}
+                  >
                     {tag}
                   </span>
                 ))}
@@ -288,7 +290,7 @@ export default function Home() {
               <div key={activity.title} className="grid gap-4 border-b border-white/8 py-6 md:grid-cols-[0.9fr_1.1fr] md:gap-8">
                 <div>
                   <div className="mb-3 inline-flex items-center gap-2 text-[11px] uppercase tracking-[0.24em] text-white/42">
-                    <Sparkles size={14} className="text-[#d7ff3f]" />
+                    <Sparkles size={14} className="text-[#d4ff00]" />
                     activity
                   </div>
                   <h3 className="text-lg font-semibold text-white md:text-xl">{activity.title}</h3>

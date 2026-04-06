@@ -105,6 +105,34 @@ body {
   aspect-ratio: 1 / 1;
   object-fit: cover;
   background: #000;
+  filter: contrast(1.05) brightness(0.92);
+}
+
+.hero-visual-overlay,
+.hero-visual-noise {
+  pointer-events: none;
+  position: absolute;
+  inset: 0;
+}
+
+.hero-visual-overlay {
+  background:
+    linear-gradient(rgba(255, 255, 255, 0.04) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(255, 255, 255, 0.035) 1px, transparent 1px),
+    radial-gradient(circle at center, transparent 46%, rgba(0, 0, 0, 0.24) 100%);
+  background-size: 6px 6px, 6px 6px, 100% 100%;
+  mix-blend-mode: screen;
+  opacity: 0.32;
+}
+
+.hero-visual-noise {
+  background-image:
+    radial-gradient(rgba(255, 255, 255, 0.14) 0.7px, transparent 0.8px),
+    radial-gradient(rgba(255, 255, 255, 0.08) 0.5px, transparent 0.7px);
+  background-position: 0 0, 3px 3px;
+  background-size: 8px 8px, 11px 11px;
+  mix-blend-mode: soft-light;
+  opacity: 0.22;
 }
 
 .hero-signal-body {

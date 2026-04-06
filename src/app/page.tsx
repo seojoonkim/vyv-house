@@ -169,6 +169,8 @@ export default function Home() {
                 loop
                 playsInline
               />
+              <div className="hero-visual-overlay" aria-hidden="true" />
+              <div className="hero-visual-noise" aria-hidden="true" />
             </div>
 
             <div className="hero-signal-stats">

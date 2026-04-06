@@ -1,5 +1,5 @@
 import { residents } from "@/data/residents";
-import { House, Mail, MapPin, Sparkles, Users, ArrowUpRight } from "lucide-react";
+import { House, Mail, MapPin, Sparkles, Users, ArrowUpRight, Link } from "lucide-react";
 
 const houseProtocols = [
   "live close to the work",
@@ -157,7 +157,7 @@ export default function Home() {
             <div className="data-strip mt-8 grid text-left sm:grid-cols-2 lg:grid-cols-2">
               <div className="data-cell px-0 py-4 sm:px-5">
                 <div className="text-[11px] uppercase tracking-[0.24em] text-white/42">residents</div>
-                <div className="mt-2 font-emphasis text-4xl text-[#d4ff00]">02</div>
+                <div className="mt-2 font-emphasis text-4xl text-[#d4ff00]">04</div>
               </div>
               <div className="data-cell px-0 py-4 sm:px-5">
                 <div className="text-[11px] uppercase tracking-[0.24em] text-white/42">mode</div>
@@ -257,6 +257,11 @@ export default function Home() {
                     {resident.xUrl ? (
                       <a href={resident.xUrl} target="_blank" rel="noreferrer" className="inline-flex items-center gap-1 hover:text-white">
                         <span aria-hidden>𝕏</span> @{resident.xHandle}
+                      </a>
+                    ) : null}
+                    {resident.linkedinUrl ? (
+                      <a href={resident.linkedinUrl} target="_blank" rel="noreferrer" className="inline-flex items-center gap-1 hover:text-white">
+                        <Link size={14} /> {resident.linkedinHandle ?? "LinkedIn"}
                       </a>
                     ) : null}
                   </div>

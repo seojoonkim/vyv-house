@@ -6,6 +6,8 @@ export type Resident = {
   avatarUrl: string;
   xHandle?: string;
   xUrl?: string;
+  linkedinHandle?: string;
+  linkedinUrl?: string;
   description: string;
   role?: string;
   tags?: string[];

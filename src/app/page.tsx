@@ -331,7 +331,16 @@ export default function Home() {
               key={entry.id}
               className="guestbook-card p-5 transition duration-300 hover:-translate-y-1 hover:border-[#ff3b7c]/35"
             >
-              <div className="flex items-start justify-between gap-4">
+              <div className="flex items-start gap-4">
+                {entry.avatarUrl ? (
+                  // eslint-disable-next-line @next/next/no-img-element
+                  <img
+                    src={entry.avatarUrl}
+                    alt={entry.name}
+                    className="h-20 w-20 border border-white/10 object-cover"
+                    style={{ borderRadius: "0.45rem" }}
+                  />
+                ) : null}
                 <div className="min-w-0 flex-1">
                   <div className="flex items-center gap-2 text-[11px] uppercase tracking-[0.24em] text-white/42">
                     <NotebookPen size={14} className="text-[#ff3b7c]" />

@@ -9,6 +9,7 @@ export const guestbookEntries: GuestbookEntry[] = [
       "Dropped by vyv.house and left a GitHub trace. More links or a one-line intro can be added anytime.",
     githubHandle: "curiouspaul",
     githubUrl: "https://github.com/curiouspaul",
+    avatarUrl: "https://github.com/curiouspaul.png",
     tags: ["guestbook", "github", "vyv.house"],
     status: "posted",
   },

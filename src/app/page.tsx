@@ -430,7 +430,7 @@ export default function Home() {
             </p>
           </div>
 
-          <div className="border-t border-white/8">
+          <div>
             {contactItems.map(({ icon: Icon, label, value, accent }) => (
               <div key={label} className="flex items-start gap-4 border-b border-white/8 py-5">
                 <Icon size={16} className={`mt-1 ${accent}`} />

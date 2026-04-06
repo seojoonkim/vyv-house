@@ -226,12 +226,10 @@ export default function Home() {
             </h2>
           </div>
           <div className="space-y-0 border-t border-white/8">
-            {principles.map(([title, description], index) => (
+            {principles.map(([title, description]) => (
               <div
                 key={title}
-                className={`grid gap-4 border-b border-white/8 py-6 md:grid-cols-[0.9fr_1.1fr] md:gap-8 ${
-                  index === 0 ? "pt-0" : ""
-                }`}
+                className="grid gap-4 border-b border-white/8 py-6 md:grid-cols-[0.9fr_1.1fr] md:gap-8"
               >
                 <div className="text-sm uppercase tracking-[0.18em] text-white/48">{title}</div>
                 <p className="max-w-xl text-sm leading-6 text-white/70 md:text-base">{description}</p>

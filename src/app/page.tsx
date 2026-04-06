@@ -219,21 +219,27 @@ export default function Home() {
       </section>
 
       <section className="site-container px-5 pb-16 md:px-8 md:pb-24">
-        <div className="pt-6">
-          <div className="editorial-kicker editorial-kicker-pink mb-5">signal / atmosphere</div>
-          <div className="max-w-4xl">
-            <h2 className="font-display text-4xl tracking-[-0.03em] md:text-6xl">
-              part residency, part lab, part <span className="highlight-block-pink">internet salon</span>
-            </h2>
-            <div className="mt-6 max-w-3xl space-y-4 text-base leading-7 text-white/72 md:text-lg">
-              <p>
-                We optimize for proximity: to work, to feedback, to energy, and to the kind of
-                people who make your ideas sharper just by being in the room.
-              </p>
-              <p>
-                This is where products get unstuck, collaborations start naturally, and new
-                rituals for AI-native building get tested in the open.
-              </p>
+        <div className="signal-split pt-6">
+          <div className="signal-image-panel">
+            <img src="/signal-left.jpg" alt="vyv.house atmosphere" className="signal-image" />
+          </div>
+
+          <div>
+            <div className="editorial-kicker editorial-kicker-pink mb-5">signal / atmosphere</div>
+            <div className="max-w-4xl">
+              <h2 className="font-display text-4xl tracking-[-0.03em] md:text-6xl">
+                part residency, part lab, part <span className="highlight-block-pink">internet salon</span>
+              </h2>
+              <div className="mt-6 max-w-3xl space-y-4 text-base leading-7 text-white/72 md:text-lg">
+                <p>
+                  We optimize for proximity: to work, to feedback, to energy, and to the kind of
+                  people who make your ideas sharper just by being in the room.
+                </p>
+                <p>
+                  This is where products get unstuck, collaborations start naturally, and new
+                  rituals for AI-native building get tested in the open.
+                </p>
+              </div>
             </div>
           </div>
         </div>

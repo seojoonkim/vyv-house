@@ -36,7 +36,9 @@ export const guestbookEntries: GuestbookEntry[] = [
     githubHandle: "stablewoo",
     githubUrl: "https://github.com/stablewoo",
     avatarUrl: "https://github.com/stablewoo.png",
-    tags: ["guestbook", "github", "vyv.house"],
+    instagramHandle: "kyro_run",
+    instagramUrl: "https://instagram.com/kyro_run",
+    tags: ["guestbook", "github", "instagram", "vyv.house"],
     status: "posted",
   },
   {

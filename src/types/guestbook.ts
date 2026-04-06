@@ -7,6 +7,8 @@ export type GuestbookEntry = {
   githubUrl?: string;
   xHandle?: string;
   xUrl?: string;
+  instagramHandle?: string;
+  instagramUrl?: string;
   websiteLabel?: string;
   websiteUrl?: string;
   avatarUrl?: string;

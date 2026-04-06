@@ -1,6 +1,6 @@
 import { residents } from "@/data/residents";
 import { guestbookEntries } from "@/data/guestbook";
-import { House, Mail, MapPin, Sparkles, Users, ArrowUpRight, NotebookPen, Globe2 } from "lucide-react";
+import { House, Mail, MapPin, Sparkles, Users, ArrowUpRight, NotebookPen, Globe2, Camera } from "lucide-react";
 
 function GitHubIcon({ className = "h-3.5 w-3.5" }: { className?: string }) {
   return (
@@ -368,6 +368,11 @@ export default function Home() {
                 {entry.xUrl && entry.xHandle ? (
                   <a href={entry.xUrl} target="_blank" rel="noreferrer" className="inline-flex items-center gap-1 hover:text-white">
                     <XIcon /> @{entry.xHandle}
+                  </a>
+                ) : null}
+                {entry.instagramUrl && entry.instagramHandle ? (
+                  <a href={entry.instagramUrl} target="_blank" rel="noreferrer" className="inline-flex items-center gap-1 hover:text-white">
+                    <Camera size={14} /> @{entry.instagramHandle}
                   </a>
                 ) : null}
                 {entry.websiteUrl ? (

@@ -110,7 +110,7 @@ export default function Home() {
       </header>
 
       <section id="top" className="site-container px-5 pb-16 pt-28 md:px-8 md:pb-24 md:pt-32">
-        <div className="space-y-12">
+        <div className="hero-grid gap-10 items-center">
           <div>
             <div className="editorial-kicker editorial-kicker-pink mb-6">
               <House size={14} className="text-[#ff3b7c]" />
@@ -148,13 +148,25 @@ export default function Home() {
             </div>
           </div>
 
-          <div className="frame-section frame-section-pink max-w-3xl pt-6">
-            <div className="flex items-center justify-between text-[11px] uppercase tracking-[0.24em] text-white/46">
+          <div className="space-y-6">
+            <div className="hero-visual-shell">
+              <video
+                className="hero-visual"
+                src="/.openclaw/media/inbound/video---faa0f808-9b2d-4f53-ad59-5e4cff5c06fc.mp4"
+                autoPlay
+                muted
+                loop
+                playsInline
+              />
+            </div>
+
+            <div className="frame-section frame-section-pink pt-6">
+              <div className="flex items-center justify-between text-[11px] uppercase tracking-[0.24em] text-white/46">
               <span>house signal</span>
               <span className="text-[#ff3b7c]">live</span>
             </div>
 
-            <div className="signal-line mt-6 space-y-5">
+              <div className="signal-line mt-6 space-y-5">
               <div className="flex items-center gap-2 text-sm text-white/62">
                 <Sparkles size={16} className="text-[#ff3b7c]" />
                 part residency, part lab, part internet salon
@@ -171,7 +183,7 @@ export default function Home() {
               </div>
             </div>
 
-            <div className="data-strip data-strip-pink mt-8 grid text-left sm:grid-cols-2 lg:grid-cols-2">
+              <div className="data-strip data-strip-pink mt-8 grid text-left sm:grid-cols-2 lg:grid-cols-2">
               <div className="data-cell px-0 py-4 sm:px-5">
                 <div className="text-[11px] uppercase tracking-[0.24em] text-white/42">residents</div>
                 <div className="mt-2 font-emphasis text-4xl text-[#d4ff00]">06</div>
@@ -179,6 +191,7 @@ export default function Home() {
               <div className="data-cell px-0 py-4 sm:px-5">
                 <div className="text-[11px] uppercase tracking-[0.24em] text-white/42">mode</div>
                 <div className="mt-2 font-emphasis text-4xl text-[#ff3b7c]">ship</div>
+              </div>
               </div>
             </div>
           </div>

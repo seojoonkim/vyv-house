@@ -39,6 +39,36 @@ body {
   margin-right: auto;
 }
 
+.hero-grid {
+  display: grid;
+}
+
+.hero-visual-shell {
+  position: relative;
+  overflow: hidden;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 1rem;
+  background:
+    radial-gradient(circle at top left, rgba(212, 255, 0, 0.08), transparent 38%),
+    radial-gradient(circle at bottom right, rgba(255, 59, 124, 0.12), transparent 34%),
+    rgba(14, 16, 18, 0.92);
+  box-shadow: 0 20px 60px rgba(0, 0, 0, 0.28);
+}
+
+.hero-visual {
+  display: block;
+  width: 100%;
+  aspect-ratio: 1 / 1;
+  object-fit: cover;
+  background: #000;
+}
+
+@media (min-width: 1024px) {
+  .hero-grid {
+    grid-template-columns: minmax(0, 6fr) minmax(0, 4fr);
+  }
+}
+
 body::before {
   content: "";
   position: fixed;

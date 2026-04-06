@@ -439,7 +439,9 @@ export default function Home() {
         </div>
       </section>
 
-      <footer className="border-t border-white/8 px-5 py-8 md:px-8">
+      <div className="section-divider" />
+
+      <footer className="px-5 py-8 md:px-8">
         <div className="site-container flex flex-col gap-4 md:flex-row md:items-center md:justify-between">
           <div>
             <div className="font-display text-2xl">vyv.house</div>

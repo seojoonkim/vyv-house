@@ -400,7 +400,7 @@ export default function Home() {
       <section id="life" className="site-container px-5 pb-16 md:px-8 md:pb-24">
         <div className="grid gap-10 lg:grid-cols-[0.72fr_1.28fr]">
           <div>
-            <div className="editorial-kicker editorial-kicker-pink mb-5">life at the house</div>
+            <div className="editorial-kicker editorial-kicker-pink signal-kicker-pink mb-5">life at the house</div>
             <h2 className="font-display text-4xl tracking-[-0.03em] md:text-6xl">
               what actually <span className="highlight-block-pink">happens here</span>
             </h2>

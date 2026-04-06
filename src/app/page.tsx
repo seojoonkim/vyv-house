@@ -194,8 +194,6 @@ export default function Home() {
         </div>
       </section>
 
-      <div className="section-divider" />
-
       <section id="about" className="site-container px-5 py-16 md:px-8 md:py-24">
         <div className="grid gap-10 lg:grid-cols-[0.8fr_1.2fr]">
           <div>

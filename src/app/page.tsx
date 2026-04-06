@@ -17,13 +17,6 @@ function XIcon({ className = "h-3.5 w-3.5" }: { className?: string }) {
   );
 }
 
-function LinkedInIcon({ className = "h-3.5 w-3.5" }: { className?: string }) {
-  return (
-    <svg viewBox="0 0 24 24" aria-hidden="true" className={className} fill="currentColor">
-      <path d="M4.983 3.5a1.983 1.983 0 1 1 0 3.966 1.983 1.983 0 0 1 0-3.966ZM3.5 8.985h2.966V20.5H3.5V8.985Zm7.61 0h2.844v1.572h.04c.396-.75 1.364-1.541 2.808-1.541 3.004 0 3.558 2.058 3.558 4.734V20.5h-2.964v-5.983c0-1.427-.025-3.262-1.913-3.262-1.915 0-2.208 1.552-2.208 3.158V20.5H11.11V8.985Z" />
-    </svg>
-  );
-}
 
 const houseProtocols = [
   "live close to the work",
@@ -281,11 +274,6 @@ export default function Home() {
                     {resident.xUrl ? (
                       <a href={resident.xUrl} target="_blank" rel="noreferrer" className="inline-flex items-center gap-1 hover:text-white">
                         <XIcon /> @{resident.xHandle}
-                      </a>
-                    ) : null}
-                    {resident.linkedinUrl ? (
-                      <a href={resident.linkedinUrl} target="_blank" rel="noreferrer" className="inline-flex items-center gap-1 hover:text-white">
-                        <LinkedInIcon /> {resident.linkedinHandle ?? "LinkedIn"}
                       </a>
                     ) : null}
                   </div>

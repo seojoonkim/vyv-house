@@ -39,8 +39,6 @@ export const residents: Resident[] = [
     avatarUrl: "https://github.com/HanSeo0507.png",
     xHandle: "hanseo0507",
     xUrl: "https://x.com/hanseo0507",
-    linkedinHandle: "hansulee",
-    linkedinUrl: "https://www.linkedin.com/in/hansulee",
     description:
       "Software engineer building across product code, JavaScript tooling, and practical backend infrastructure from Seoul.",
     role: "Builder Resident",
@@ -50,10 +48,12 @@ export const residents: Resident[] = [
   },
   {
     id: "chanyoung-park",
-    name: "Chanyoung Park (찬영 박)",
+    name: "Chanyoung Park",
     githubId: "pcy06",
     githubUrl: "https://github.com/pcy06",
     avatarUrl: "https://github.com/pcy06.png",
+    xHandle: "parkcy0611",
+    xUrl: "https://x.com/parkcy0611",
     description:
       "Full-stack engineer working across frontend, backend, and cloud infrastructure with a strong product-minded approach.",
     role: "Builder Resident",

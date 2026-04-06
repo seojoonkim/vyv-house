@@ -229,11 +229,11 @@ body::before {
   content: "";
   width: 2.75rem;
   height: 1px;
-  background: rgba(255, 255, 255, 0.14);
+  background: rgba(212, 255, 0, 0.78);
 }
 
 .editorial-kicker-pink::before {
-  background: rgba(255, 255, 255, 0.14);
+  background: rgba(255, 59, 124, 0.82);
 }
 
 .signal-line {

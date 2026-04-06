@@ -387,6 +387,8 @@ export default function Home() {
         </div>
       </section>
 
+      <div className="section-divider" />
+
       <section id="life" className="site-container px-5 pb-16 md:px-8 md:pb-24">
         <div className="grid gap-10 lg:grid-cols-[0.72fr_1.28fr]">
           <div>

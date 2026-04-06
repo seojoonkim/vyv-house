@@ -69,10 +69,12 @@ export default function Home() {
       <div className="hero-orb absolute left-[-10rem] top-[-2rem] h-80 w-80 bg-[rgba(212,255,0,0.2)]" />
       <div className="hero-orb absolute right-[-8rem] top-28 h-80 w-80 bg-[rgba(255,59,124,0.16)]" />
 
-      <header className="sticky top-0 z-40 border-b border-white/8 bg-[#060708]/90 backdrop-blur-xl">
+      <header className="fixed inset-x-0 top-0 z-50 border-b border-white/8 bg-[#060708]/90 backdrop-blur-xl supports-[backdrop-filter]:bg-[#060708]/82">
         <div className="mx-auto flex max-w-7xl items-center justify-between px-5 py-4 md:px-8">
           <a href="#top" className="font-display text-xl tracking-wide text-white">
-            vyv<span className="text-[#d4ff00]">.</span>house
+            <span className="text-white">vyv</span>
+            <span className="text-[#ff3b7c]">.</span>
+            <span className="text-[#d4ff00]">house</span>
           </a>
           <nav className="hidden items-center gap-6 text-sm text-white/66 md:flex">
             <a href="#about" className="transition hover:text-white">about</a>
@@ -90,7 +92,7 @@ export default function Home() {
         </div>
       </header>
 
-      <section id="top" className="mx-auto max-w-7xl px-5 pb-16 pt-16 md:px-8 md:pb-24 md:pt-24">
+      <section id="top" className="mx-auto max-w-7xl px-5 pb-16 pt-28 md:px-8 md:pb-24 md:pt-32">
         <div className="grid gap-12 lg:grid-cols-[1.18fr_0.82fr] lg:items-end">
           <div>
             <div className="editorial-kicker mb-6">

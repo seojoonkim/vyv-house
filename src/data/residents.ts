@@ -74,32 +74,4 @@ export const residents: Resident[] = [
     sortOrder: 5,
     status: "current",
   },
-  {
-    id: "paul-jung",
-    name: "Paul Jung",
-    githubId: "curiouspaul",
-    githubUrl: "https://github.com/curiouspaul",
-    avatarUrl: "https://github.com/curiouspaul.png",
-    description:
-      "Builder dropping GitHub traces, ideas, and experiments into the house orbit with a bias toward shipping and curiosity.",
-    role: "Guest Builder",
-    tags: ["guest", "experiments", "shipping"],
-    sortOrder: 6,
-    status: "guest",
-  },
-  {
-    id: "jeonghwan-park",
-    name: "Jeonghwan Park",
-    githubId: "StableFluffy",
-    githubUrl: "https://github.com/StableFluffy",
-    avatarUrl: "https://github.com/StableFluffy.png",
-    xHandle: "stablefluffy",
-    xUrl: "https://x.com/stablefluffy",
-    description:
-      "Builder exploring AI products, model workflows, and software experiments across code, research, and fast iteration.",
-    role: "Builder Resident",
-    tags: ["AI", "research", "experiments"],
-    sortOrder: 7,
-    status: "current",
-  },
 ];

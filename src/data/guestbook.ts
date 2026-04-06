@@ -2,15 +2,17 @@ import type { GuestbookEntry } from "@/types/guestbook";
 
 export const guestbookEntries: GuestbookEntry[] = [
   {
-    id: "jungwoo-jay",
-    name: "Jay",
+    id: "stablefluffy",
+    name: "Jeonghwan Park",
     title: "Guest / Builder",
     note:
-      "Likes making all kinds of things. Dropped a GitHub trace at vyv.house.",
-    githubHandle: "stablewoo",
-    githubUrl: "https://github.com/stablewoo",
-    avatarUrl: "https://github.com/stablewoo.png",
-    tags: ["guestbook", "github", "vyv.house"],
+      "Builder exploring AI products, model workflows, and software experiments across code, research, and fast iteration.",
+    githubHandle: "StableFluffy",
+    githubUrl: "https://github.com/StableFluffy",
+    xHandle: "stablefluffy",
+    xUrl: "https://x.com/stablefluffy",
+    avatarUrl: "https://github.com/StableFluffy.png",
+    tags: ["guestbook", "AI", "experiments"],
     status: "posted",
   },
   {

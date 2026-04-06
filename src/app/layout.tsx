@@ -28,17 +28,29 @@ export const metadata: Metadata = {
   openGraph: {
     title: "vyv-house — a hacker house for builders",
     description:
-      "A vibey hacker house for builders, researchers, founders, and internet weirdos.",
+      "vyv-house는 빌더, 연구자, 창업가, 인터넷 네이티브가 함께 살고 만들고 실험하는 해커하우스입니다.",
     url: "https://vyv.house",
     siteName: "vyv-house",
     locale: "en_US",
     type: "website",
+    images: [
+      {
+        url: "/og-image.jpg",
+        width: 1200,
+        height: 630,
+        alt: "vyv-house open graph image",
+      },
+    ],
   },
   twitter: {
     card: "summary_large_image",
-    title: "vyv-house",
+    title: "vyv-house — a hacker house for builders",
     description:
-      "A vibey hacker house for builders, researchers, founders, and internet weirdos.",
+      "vyv-house는 빌더, 연구자, 창업가, 인터넷 네이티브가 함께 살고 만들고 실험하는 해커하우스입니다.",
+    images: ["/og-image.jpg"],
+  },
+  alternates: {
+    canonical: "https://vyv.house",
   },
 };
 

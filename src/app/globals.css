@@ -66,14 +66,12 @@ body {
   position: absolute;
   inset: 0;
   background:
-    linear-gradient(rgba(255, 255, 255, 0.045) 1px, transparent 1px),
-    linear-gradient(90deg, rgba(255, 255, 255, 0.038) 1px, transparent 1px),
-    radial-gradient(rgba(255, 255, 255, 0.06) 0.7px, transparent 0.8px),
+    linear-gradient(rgba(255, 255, 255, 0.03) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(255, 255, 255, 0.025) 1px, transparent 1px),
     linear-gradient(180deg, rgba(0, 0, 0, 0.08), rgba(0, 0, 0, 0.32));
-  background-size: 7px 7px, 7px 7px, 11px 11px, 100% 100%;
-  background-position: 0 0, 0 0, 2px 2px, 0 0;
+  background-size: 7px 7px, 7px 7px, 100% 100%;
   mix-blend-mode: screen;
-  opacity: 0.36;
+  opacity: 0.28;
 }
 
 .hero-signal-card {

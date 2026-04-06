@@ -63,7 +63,7 @@ const contactItems = [
     icon: Mail,
     label: "Email",
     value: "hello@vyv.house",
-    accent: "text-[#d4ff00]",
+    accent: "text-[#ff3b7c]",
   },
   {
     icon: MapPin,
@@ -87,7 +87,7 @@ export default function Home() {
       <div className="hero-orb absolute right-[-8rem] top-28 h-80 w-80 bg-[rgba(255,59,124,0.16)]" />
 
       <header className="fixed inset-x-0 top-0 z-50 border-b border-white/8 bg-[#060708]/90 backdrop-blur-xl supports-[backdrop-filter]:bg-[#060708]/82">
-        <div className="mx-auto flex max-w-7xl items-center justify-between px-5 py-4 md:px-8">
+        <div className="site-container flex items-center justify-between px-5 py-4 md:px-8">
           <a href="#top" className="font-display text-xl tracking-wide text-white">
             <span className="text-white">vyv</span>
             <span className="text-[#ff3b7c]">.</span>
@@ -109,11 +109,11 @@ export default function Home() {
         </div>
       </header>
 
-      <section id="top" className="mx-auto max-w-7xl px-5 pb-16 pt-28 md:px-8 md:pb-24 md:pt-32">
-        <div className="grid gap-12 lg:grid-cols-[1.18fr_0.82fr] lg:items-end">
+      <section id="top" className="site-container px-5 pb-16 pt-28 md:px-8 md:pb-24 md:pt-32">
+        <div className="space-y-12">
           <div>
-            <div className="editorial-kicker mb-6">
-              <House size={14} className="text-[#d4ff00]" />
+            <div className="editorial-kicker editorial-kicker-pink mb-6">
+              <House size={14} className="text-[#ff3b7c]" />
               hacker house / builder residency
             </div>
 
@@ -124,7 +124,7 @@ export default function Home() {
             </h1>
 
             <p className="mt-6 max-w-2xl text-base leading-7 text-white/72 md:text-lg">
-              <span className="highlight-block">vyv-house</span> is a vibey hacker house where founders,
+              <span className="highlight-block-pink">vyv-house</span> is a vibey hacker house where founders,
               researchers, designers, and internet weirdos live close to the work — building,
               testing, hosting, and cross-pollinating ideas in real time.
             </p>
@@ -148,7 +148,7 @@ export default function Home() {
             </div>
           </div>
 
-          <div className="frame-section pl-0 pt-6 lg:pl-8">
+          <div className="frame-section frame-section-pink max-w-3xl pt-6">
             <div className="flex items-center justify-between text-[11px] uppercase tracking-[0.24em] text-white/46">
               <span>house signal</span>
               <span className="text-[#ff3b7c]">live</span>
@@ -171,7 +171,7 @@ export default function Home() {
               </div>
             </div>
 
-            <div className="data-strip mt-8 grid text-left sm:grid-cols-2 lg:grid-cols-2">
+            <div className="data-strip data-strip-pink mt-8 grid text-left sm:grid-cols-2 lg:grid-cols-2">
               <div className="data-cell px-0 py-4 sm:px-5">
                 <div className="text-[11px] uppercase tracking-[0.24em] text-white/42">residents</div>
                 <div className="mt-2 font-emphasis text-4xl text-[#d4ff00]">06</div>
@@ -196,7 +196,7 @@ export default function Home() {
 
       <div className="section-divider" />
 
-      <section id="about" className="mx-auto max-w-7xl px-5 py-16 md:px-8 md:py-24">
+      <section id="about" className="site-container px-5 py-16 md:px-8 md:py-24">
         <div className="grid gap-10 lg:grid-cols-[0.8fr_1.2fr]">
           <div>
             <div className="editorial-kicker mb-5">what is vyv-house</div>
@@ -220,12 +220,12 @@ export default function Home() {
         </div>
       </section>
 
-      <section className="mx-auto max-w-5xl px-5 pb-16 md:px-8 md:pb-24">
+      <section className="site-container px-5 pb-16 md:px-8 md:pb-24">
         <div className="frame-section pt-6 text-center">
-          <div className="editorial-kicker justify-center">house protocol</div>
+          <div className="editorial-kicker editorial-kicker-pink justify-center">house protocol</div>
           <div className="mt-8 space-y-4 text-2xl leading-tight tracking-[-0.03em] text-white/88 md:text-4xl">
             {houseProtocols.map((line, index) => (
-              <p key={line} className={index === houseProtocols.length - 1 ? "text-[#d4ff00]" : ""}>
+              <p key={line} className={index === houseProtocols.length - 1 ? "text-[#ff3b7c]" : ""}>
                 {line}
               </p>
             ))}
@@ -235,7 +235,7 @@ export default function Home() {
 
       <div className="section-divider" />
 
-      <section id="residents" className="mx-auto max-w-7xl px-5 py-16 md:px-8 md:py-24">
+      <section id="residents" className="site-container px-5 py-16 md:px-8 md:py-24">
         <div className="mb-10 flex flex-col gap-4 md:flex-row md:items-end md:justify-between">
           <div>
             <div className="editorial-kicker mb-4">the residents</div>
@@ -264,7 +264,7 @@ export default function Home() {
                   <div className="flex items-start justify-between gap-3">
                     <div>
                       <h3 className="text-xl font-semibold text-white">{resident.name}</h3>
-                      <p className="mt-1 text-sm text-[#d4ff00]">{resident.role}</p>
+                      <p className="mt-1 text-sm text-[#ff3b7c]">{resident.role}</p>
                     </div>
                   </div>
                   <div className="mt-3 flex flex-wrap gap-2 text-sm text-white/65">
@@ -296,12 +296,12 @@ export default function Home() {
         </div>
       </section>
 
-      <section id="life" className="mx-auto max-w-7xl px-5 pb-16 md:px-8 md:pb-24">
+      <section id="life" className="site-container px-5 pb-16 md:px-8 md:pb-24">
         <div className="grid gap-10 lg:grid-cols-[0.72fr_1.28fr]">
           <div>
-            <div className="editorial-kicker mb-5">life at the house</div>
+            <div className="editorial-kicker editorial-kicker-pink mb-5">life at the house</div>
             <h2 className="font-display text-4xl tracking-[-0.03em] md:text-6xl">
-              what actually <span className="highlight-block-green">happens here</span>
+              what actually <span className="highlight-block-pink">happens here</span>
             </h2>
           </div>
           <div className="border-t border-white/8">
@@ -309,7 +309,7 @@ export default function Home() {
               <div key={activity.title} className="grid gap-4 border-b border-white/8 py-6 md:grid-cols-[0.9fr_1.1fr] md:gap-8">
                 <div>
                   <div className="mb-3 inline-flex items-center gap-2 text-[11px] uppercase tracking-[0.24em] text-white/42">
-                    <Sparkles size={14} className="text-[#d4ff00]" />
+                    <Sparkles size={14} className="text-[#ff3b7c]" />
                     activity
                   </div>
                   <h3 className="text-lg font-semibold text-white md:text-xl">{activity.title}</h3>
@@ -321,10 +321,10 @@ export default function Home() {
         </div>
       </section>
 
-      <section id="join" className="mx-auto max-w-6xl px-5 pb-16 md:px-8 md:pb-24">
-        <div className="frame-section grid gap-10 pt-6 md:grid-cols-[1.15fr_0.85fr] md:items-end">
+      <section id="join" className="site-container px-5 pb-16 md:px-8 md:pb-24">
+        <div className="frame-section frame-section-pink grid gap-10 pt-6 md:grid-cols-[1.15fr_0.85fr] md:items-end">
           <div>
-            <div className="editorial-kicker mb-5">join / contact</div>
+            <div className="editorial-kicker editorial-kicker-pink mb-5">join / contact</div>
             <h2 className="font-display text-4xl tracking-[-0.03em] md:text-6xl">
               want to <span className="gradient-text">build from here?</span>
             </h2>
@@ -349,7 +349,7 @@ export default function Home() {
       </section>
 
       <footer className="border-t border-white/8 px-5 py-8 md:px-8">
-        <div className="mx-auto flex max-w-7xl flex-col gap-4 md:flex-row md:items-center md:justify-between">
+        <div className="site-container flex flex-col gap-4 md:flex-row md:items-center md:justify-between">
           <div>
             <div className="font-display text-2xl">vyv.house</div>
             <div className="mt-1 text-sm text-white/45">live together, think together, ship together.</div>

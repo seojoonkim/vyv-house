@@ -316,14 +316,12 @@ export default function Home() {
       </section>
 
       <section id="guestbook" className="site-container px-5 pb-16 md:px-8 md:pb-24">
-        <div className="mb-10 flex flex-col gap-4 md:flex-row md:items-end md:justify-between">
-          <div>
-            <div className="editorial-kicker editorial-kicker-pink mb-4">guestbook</div>
-            <h2 className="font-display text-4xl tracking-[-0.03em] md:text-6xl">
-              leave your <span className="highlight-block-pink">internet card</span>
-            </h2>
-          </div>
-          <p className="max-w-xl text-sm leading-6 text-white/65 md:text-base">
+        <div className="mb-10 max-w-4xl">
+          <div className="editorial-kicker editorial-kicker-pink mb-4">guestbook</div>
+          <h2 className="font-display text-4xl tracking-[-0.03em] md:text-6xl">
+            leave your <span className="highlight-block-pink">internet card</span>
+          </h2>
+          <p className="mt-5 max-w-2xl text-sm leading-6 text-white/65 md:text-base">
             For people who actually visited vyv.house. Leave a small card — your name, GitHub, X, website,
             and one short note about who you are or what you are building.
           </p>

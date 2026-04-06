@@ -1,5 +1,6 @@
 import { residents } from "@/data/residents";
-import { House, Mail, MapPin, Sparkles, Users, ArrowUpRight } from "lucide-react";
+import { guestbookEntries } from "@/data/guestbook";
+import { House, Mail, MapPin, Sparkles, Users, ArrowUpRight, NotebookPen, Globe2 } from "lucide-react";
 
 function GitHubIcon({ className = "h-3.5 w-3.5" }: { className?: string }) {
   return (
@@ -96,6 +97,7 @@ export default function Home() {
           <nav className="hidden items-center gap-6 text-sm text-white/66 md:flex">
             <a href="#about" className="transition hover:text-white">about</a>
             <a href="#residents" className="transition hover:text-white">residents</a>
+            <a href="#guestbook" className="transition hover:text-white">guestbook</a>
             <a href="#life" className="transition hover:text-white">life</a>
             <a href="#join" className="transition hover:text-white">join</a>
           </nav>
@@ -295,6 +297,73 @@ export default function Home() {
               <p className="mt-5 text-sm leading-6 text-white/72">{resident.description}</p>
               <div className="mt-5 flex flex-wrap gap-2">
                 {resident.tags?.map((tag) => (
+                  <span
+                    key={tag}
+                    className="border border-white/10 bg-white/5 px-3 py-1 text-xs text-white/60"
+                    style={{ borderRadius: "var(--radius-chip)" }}
+                  >
+                    {tag}
+                  </span>
+                ))}
+              </div>
+            </article>
+          ))}
+        </div>
+      </section>
+
+      <section id="guestbook" className="site-container px-5 pb-16 md:px-8 md:pb-24">
+        <div className="mb-10 flex flex-col gap-4 md:flex-row md:items-end md:justify-between">
+          <div>
+            <div className="editorial-kicker editorial-kicker-pink mb-4">guestbook</div>
+            <h2 className="font-display text-4xl tracking-[-0.03em] md:text-6xl">
+              leave your <span className="highlight-block-pink">internet card</span>
+            </h2>
+          </div>
+          <p className="max-w-xl text-sm leading-6 text-white/65 md:text-base">
+            For people who actually visited vyv.house. Leave a small card — your name, GitHub, X, website,
+            and one short note about who you are or what you are building.
+          </p>
+        </div>
+
+        <div className="grid gap-6 md:grid-cols-2">
+          {guestbookEntries.map((entry) => (
+            <article
+              key={entry.id}
+              className="guestbook-card p-5 transition duration-300 hover:-translate-y-1 hover:border-[#ff3b7c]/35"
+            >
+              <div className="flex items-start justify-between gap-4">
+                <div className="min-w-0 flex-1">
+                  <div className="flex items-center gap-2 text-[11px] uppercase tracking-[0.24em] text-white/42">
+                    <NotebookPen size={14} className="text-[#ff3b7c]" />
+                    {entry.status === "open" ? "open slot" : "guest entry"}
+                  </div>
+                  <h3 className="mt-3 text-xl font-semibold text-white">{entry.name}</h3>
+                  {entry.title ? <p className="mt-1 text-sm text-[#ff3b7c]">{entry.title}</p> : null}
+                </div>
+              </div>
+
+              <p className="mt-5 text-sm leading-6 text-white/72">{entry.note}</p>
+
+              <div className="mt-5 flex flex-wrap gap-3 text-sm text-white/65">
+                {entry.githubUrl && entry.githubHandle ? (
+                  <a href={entry.githubUrl} target="_blank" rel="noreferrer" className="inline-flex items-center gap-1 hover:text-white">
+                    <GitHubIcon /> {entry.githubHandle}
+                  </a>
+                ) : null}
+                {entry.xUrl && entry.xHandle ? (
+                  <a href={entry.xUrl} target="_blank" rel="noreferrer" className="inline-flex items-center gap-1 hover:text-white">
+                    <XIcon /> @{entry.xHandle}
+                  </a>
+                ) : null}
+                {entry.websiteUrl ? (
+                  <a href={entry.websiteUrl} target="_blank" rel="noreferrer" className="inline-flex items-center gap-1 hover:text-white">
+                    <Globe2 size={14} /> {entry.websiteLabel ?? "website"}
+                  </a>
+                ) : null}
+              </div>
+
+              <div className="mt-5 flex flex-wrap gap-2">
+                {entry.tags?.map((tag) => (
                   <span
                     key={tag}
                     className="border border-white/10 bg-white/5 px-3 py-1 text-xs text-white/60"

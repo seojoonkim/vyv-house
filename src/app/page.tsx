@@ -222,6 +222,8 @@ export default function Home() {
         <div className="signal-split pt-6">
           <div className="signal-image-panel">
             <img src="/signal-left.jpg" alt="vyv.house atmosphere" className="signal-image" />
+            <div className="signal-image-noise" aria-hidden="true" />
+            <div className="signal-image-scanlines" aria-hidden="true" />
           </div>
 
           <div>

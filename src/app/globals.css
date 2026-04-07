@@ -63,6 +63,7 @@ body {
 }
 
 .signal-image-panel {
+  position: relative;
   overflow: hidden;
   border: 1px solid rgba(255, 255, 255, 0.1);
   border-radius: 1.1rem;
@@ -76,6 +77,51 @@ body {
   height: 100%;
   object-fit: cover;
   filter: grayscale(1) contrast(1.06) brightness(0.94);
+}
+
+.signal-image-noise,
+.signal-image-scanlines {
+  pointer-events: none;
+  position: absolute;
+  inset: 0;
+}
+
+.signal-image-noise {
+  background-image:
+    radial-gradient(rgba(255, 255, 255, 0.11) 0.7px, transparent 0.8px),
+    radial-gradient(rgba(255, 255, 255, 0.05) 0.45px, transparent 0.65px);
+  background-size: 10px 10px, 16px 16px;
+  background-position: 0 0, 4px 3px;
+  mix-blend-mode: soft-light;
+  opacity: 0.24;
+  animation: signalStaticShift 180ms steps(2) infinite;
+}
+
+.signal-image-scanlines {
+  background:
+    repeating-linear-gradient(
+      to bottom,
+      rgba(255, 255, 255, 0.05) 0px,
+      rgba(255, 255, 255, 0.05) 1px,
+      transparent 1px,
+      transparent 4px
+    );
+  mix-blend-mode: screen;
+  opacity: 0.18;
+  animation: signalScanDrift 6s linear infinite;
+}
+
+@keyframes signalStaticShift {
+  0% { transform: translate(0, 0); opacity: 0.18; }
+  25% { transform: translate(-1px, 1px); opacity: 0.24; }
+  50% { transform: translate(1px, -1px); opacity: 0.2; }
+  75% { transform: translate(0.5px, 1px); opacity: 0.26; }
+  100% { transform: translate(0, 0); opacity: 0.18; }
+}
+
+@keyframes signalScanDrift {
+  0% { transform: translateY(-2px); }
+  100% { transform: translateY(2px); }
 }
 
 .hero-signal-head {

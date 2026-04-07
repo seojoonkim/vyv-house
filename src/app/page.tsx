@@ -454,15 +454,21 @@ export default function Home() {
       <div className="section-divider" />
 
       <footer className="px-5 py-8 md:px-8">
-        <div className="site-container flex flex-col gap-4 md:flex-row md:items-center md:justify-between">
-          <div>
-            <div className="font-display text-2xl">vyv.house</div>
-            <div className="mt-1 text-sm text-white/45">live together, think together, ship together.</div>
+        <div className="site-container flex flex-col gap-6 md:flex-row md:items-center md:justify-between">
+          <div className="flex flex-col gap-3">
+            <div>
+              <div className="font-display text-2xl">vyv.house</div>
+              <div className="mt-1 text-sm text-white/45">live together, think together, ship together.</div>
+            </div>
+            <div className="flex items-center gap-2 mt-1">
+              <span className="text-xs uppercase tracking-widest text-white/40">Powered by</span>
+              <img src="/hashed-logo.jpg" alt="Hashed" className="h-4 mix-blend-screen opacity-70 object-contain" />
+            </div>
           </div>
           <div className="flex flex-wrap items-center gap-4 text-sm text-white/55">
-            <a href="https://github.com/seojoonkim/vyv-house" target="_blank" rel="noreferrer" className="hover:text-white">GitHub</a>
-            <a href="https://x.com/simonkim_nft" target="_blank" rel="noreferrer" className="hover:text-white">X</a>
-            <a href="mailto:hello@vyv.house" className="hover:text-white">Contact</a>
+            <a href="https://github.com/seojoonkim/vyv-house" target="_blank" rel="noreferrer" className="hover:text-white transition-colors">GitHub</a>
+            <a href="https://x.com/simonkim_nft" target="_blank" rel="noreferrer" className="hover:text-white transition-colors">X</a>
+            <a href="mailto:hello@vyv.house" className="hover:text-white transition-colors">Contact</a>
           </div>
         </div>
       </footer>

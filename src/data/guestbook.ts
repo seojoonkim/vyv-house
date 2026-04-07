@@ -74,7 +74,9 @@ export const guestbookEntries: GuestbookEntry[] = [
     githubHandle: "junhoyeo",
     githubUrl: "https://github.com/junhoyeo",
     avatarUrl: "https://github.com/junhoyeo.png",
-    tags: ["guestbook", "github", "junho.io", "vyv.house"],
+    xHandle: "_junhoyeo",
+    xUrl: "https://x.com/_junhoyeo",
+    tags: ["guestbook", "github", "x", "junho.io", "vyv.house"],
     status: "posted",
   },
 ];

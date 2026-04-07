@@ -462,7 +462,7 @@ export default function Home() {
             </div>
             <div className="flex items-center gap-2 mt-1">
               <span className="text-xs uppercase tracking-widest text-white/40">Powered by</span>
-              <img src="/hashed-logo.jpg" alt="Hashed" className="h-4 mix-blend-screen opacity-70 object-contain" />
+              <img src="/hashed-logo-transparent.png" alt="Hashed" className="h-[14px] opacity-60 object-contain" />
             </div>
           </div>
           <div className="flex flex-wrap items-center gap-4 text-sm text-white/55">

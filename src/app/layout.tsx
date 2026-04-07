@@ -29,6 +29,11 @@ export const metadata: Metadata = {
   metadataBase: new URL("https://vyv.house"),
   title: metaTitle,
   description: metaDescription,
+  icons: {
+    icon: "/icon.svg",
+    shortcut: "/icon.svg",
+    apple: "/icon.svg",
+  },
   openGraph: {
     title: metaTitle,
     description: metaDescription,

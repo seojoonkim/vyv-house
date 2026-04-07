@@ -65,4 +65,16 @@ export const guestbookEntries: GuestbookEntry[] = [
     tags: ["guestbook", "github", "vyv.house"],
     status: "posted",
   },
+  {
+    id: "junhoyeo",
+    name: "Junho Yeo",
+    title: "Guest / Builder",
+    note:
+      "Dropped by vyv.house, checked out omo.bot, and approved the beanbag setup. Leaving a GitHub trace from junho.io.",
+    githubHandle: "junhoyeo",
+    githubUrl: "https://github.com/junhoyeo",
+    avatarUrl: "https://github.com/junhoyeo.png",
+    tags: ["guestbook", "github", "junho.io", "vyv.house"],
+    status: "posted",
+  },
 ];

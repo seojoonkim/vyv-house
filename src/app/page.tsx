@@ -402,7 +402,7 @@ export default function Home() {
           <div>
             <div className="editorial-kicker editorial-kicker-pink signal-kicker-pink mb-5">life at the house</div>
             <h2 className="font-display text-4xl tracking-[-0.03em] md:text-6xl">
-              what actually <span className="highlight-block-pink">happens here</span>
+              what actually <span className="highlight-block-pink signal-highlight-pink">happens here</span>
             </h2>
           </div>
           <div className="border-t border-white/8">
